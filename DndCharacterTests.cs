@@ -111,7 +111,7 @@ public class DndCharacterTests
         }
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Random_character_is_valid()
     {
         for (var i = 0; i < 10; i++)
@@ -127,7 +127,7 @@ public class DndCharacterTests
         }
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Each_ability_is_only_calculated_once()
     {
         for (var i = 0; i < 10; i++)
@@ -142,7 +142,7 @@ public class DndCharacterTests
         }
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Random_ability_is_distributed_correctly()
     {
         var expectedDistribution = new Dictionary<int, int>
