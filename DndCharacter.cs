@@ -12,7 +12,15 @@ public class DndCharacter
 
     public static int Modifier(int score)
     {
-        throw new NotImplementedException("You need to implement this function.");
+        float result = ((float)score - 10) / 2;
+        if (result < 0)
+        {
+            return (int)Math.Round(result, MidpointRounding.AwayFromZero);
+        }
+        else
+        {
+            return (int)Math.Round(result, MidpointRounding.ToZero);
+        }            
     }
 
     public static int Ability() 
